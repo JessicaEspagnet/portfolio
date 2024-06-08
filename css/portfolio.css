@@ -118,6 +118,7 @@ h1 {
   border: none;
   width: 150px;
   box-shadow: -2px 5px 9px -4px rgba(0, 0, 0, 0.64);
+  text-decoration: none;
 }
 
 .buttonProjets:hover,
@@ -150,7 +151,6 @@ h1 {
   display: flex;
   justify-content: space-around;
   padding-top: 70px;
-  /*margin-top: 70px;*/
   align-items: center;
   margin: 20px;
   margin-bottom: 50px;
@@ -165,7 +165,8 @@ h1 {
   margin: 10px;
 }
 
-.langages, .logiciels {
+.langages,
+.logiciels {
   width: 700px;
 }
 
@@ -224,10 +225,14 @@ footer img {
 }
 
 @media screen and (max-width: 500px) {
-  main, .presentation {
+
+  main,
+  .presentation {
     width: 100%;
   }
-  nav div:first-child{
+
+  nav div:first-child {
     display: none;
   }
+
 }

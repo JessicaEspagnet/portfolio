@@ -118,7 +118,8 @@ h4 {
   justify-content: space-between;
 }*/
 
-/*1*//*
+/*1*/
+/*
 .buttonPdf {
   width: 80px;
   display: inline-block;
@@ -158,14 +159,15 @@ h4 {
   transition: all ease 0.1s;
   box-shadow: 0px 5px 0px 0px #b092c4;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.buttonPdf:hover{
-  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-	      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-	      -0.5px -0.5px 0px rgba(255,255,255,1),
-	      0.5px 0.5px 0px rgba(0,0,0,0.15),
-	      0px 12px 10px -10px rgba(0,0,0,0.05);
+.buttonPdf:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
   /*border: 1px solid rgba(0,0,0,0.1);*/
   box-shadow: 0px 5px 0px 0px #b092c4;
   background-color: #f5def3;
@@ -181,7 +183,7 @@ h4 {
   display: none;
 }*/
 
-footer{
+footer {
   background-color: #6e45b1;
   display: flex;
   justify-content: space-around;
@@ -201,9 +203,10 @@ footer img {
 }
 
 @media screen and (max-width: 500px) {
-  .contenu{
+
+  .contenu {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
 }
