@@ -223,4 +223,11 @@ footer img {
   padding: 10px;
 }
 
-@media screen and (max-width: 500px) {}
+@media screen and (max-width: 500px) {
+  main, .presentation {
+    width: 100%;
+  }
+  nav div:first-child{
+    display: none;
+  }
+}

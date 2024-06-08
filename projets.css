@@ -49,6 +49,8 @@ header nav img {
 main {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
 }
 
 .projet {
@@ -198,3 +200,10 @@ footer img {
   padding: 10px;
 }
 
+@media screen and (max-width: 500px) {
+  .contenu{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}
