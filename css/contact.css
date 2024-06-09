@@ -59,7 +59,7 @@ header nav img {
 }
 
 #contact p{
-    display: inline;
+  display: inline;
 }
 
 #contact h2{
@@ -102,5 +102,9 @@ html, body {
 
   .menu div li:first-child {
     display: none;
+  }
+
+  #contact {
+    margin: 22px;
   }
 }

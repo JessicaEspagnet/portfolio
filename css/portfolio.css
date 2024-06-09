@@ -270,6 +270,11 @@ footer img {
   .photo{
     width: 200px;
     float: left;
+    display: flex;
   }
 
+  .photo img {
+    width: 300px;
+    
+  }
 }
