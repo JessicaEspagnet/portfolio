@@ -209,4 +209,15 @@ footer img {
     flex-wrap: wrap;
   }
 
+  .menu {
+    display: flex;
+  }
+
+  .menu div {
+    display: flex;
+  }
+
+  .menu div li:first-child {
+    display: none;
+  }
 }

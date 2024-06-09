@@ -226,13 +226,50 @@ footer img {
 
 @media screen and (max-width: 500px) {
 
-  main,
-  .presentation {
-    width: 100%;
+  .menu {
+    display: flex;
+    /*flex-wrap: wrap;*/
   }
+
+  .menu div {
+    display: flex;
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+  }
+
+  .menu div li:first-child {
+    display: none;
+  }
+
+  .menu li {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  main,
+  .presentation, .aPropos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .colonne {
+    columns: 1;
+  }
+
+  .langages,
+.logiciels {
+  width: 200px;
+  align-items: center;
+}
 
   nav div:first-child {
     display: none;
+  }
+
+  .photo{
+    width: 200px;
+    float: left;
   }
 
 }

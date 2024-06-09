@@ -90,3 +90,17 @@ html, body {
   height: 100%;
 }
 
+@media screen and (max-width: 500px) {
+
+  .menu {
+    display: flex;
+  }
+
+  .menu div {
+    display: flex;
+  }
+
+  .menu div li:first-child {
+    display: none;
+  }
+}

@@ -66,3 +66,18 @@ footer img {
   margin: 2px;
   padding: 10px;
 }
+
+@media screen and (max-width: 500px) {
+
+  .menu {
+    display: flex;
+  }
+
+  .menu div {
+    display: flex;
+  }
+
+  .menu div li:first-child {
+    display: none;
+  }
+}
