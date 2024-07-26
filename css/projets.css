@@ -220,4 +220,11 @@ footer img {
   .menu div li:first-child {
     display: none;
   }
+
+  footer {
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 20px;
+  }
+
 }

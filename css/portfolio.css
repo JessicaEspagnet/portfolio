@@ -247,7 +247,8 @@ footer img {
   }
 
   main,
-  .presentation, .aPropos {
+  .presentation,
+  .aPropos {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -258,16 +259,16 @@ footer img {
   }
 
   .langages,
-.logiciels {
-  width: 200px;
-  align-items: center;
-}
+  .logiciels {
+    width: 200px;
+    align-items: center;
+  }
 
   nav div:first-child {
     display: none;
   }
 
-  .photo{
+  .photo {
     width: 200px;
     float: left;
     display: flex;
@@ -275,6 +276,12 @@ footer img {
 
   .photo img {
     width: 300px;
-    
   }
+
+  footer {
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 20px;
+  }
+
 }
