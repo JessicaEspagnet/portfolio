@@ -92,6 +92,11 @@ footer img {
   padding: 10px;
 }
 
+#logo_contact {
+  display: flex;
+  gap: 20px;
+}
+
 html,
 body {
   height: 100%;
