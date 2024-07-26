@@ -71,6 +71,11 @@ header nav img {
   margin: 20px;
 }
 
+#contact a {
+  text-decoration: none;
+  color: black;
+}
+
 
 
 footer {
