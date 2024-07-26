@@ -89,6 +89,7 @@ footer img {
   footer {
     flex-wrap: wrap;
     height: 100%;
+    padding: 20px;
   }
 
 }
