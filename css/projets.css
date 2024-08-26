@@ -66,13 +66,9 @@ main {
 .contenu {
   display: flex;
   justify-items: center;
-  /* justify-content: center;*/
-  /*border-color: black;
-    border: 2px;*/
   justify-content: space-between;
   padding: 30px;
   gap: 10px;
-  /* align-items: center;*/
 }
 
 .projet h2 {
@@ -81,25 +77,16 @@ main {
 }
 
 .image {
-  /*  margin: 10px;*/
-  /* padding: 5px;
-    margin-left: 10px;*/
   justify-self: start;
 }
 
-/*#description-s104{
-    margin-top: 40px;
-  }*/
-
 .description {
-  /*margin-bottom: 20px;*/
   width: 50%;
   justify-content: center;
 }
 
 .image img {
   width: 100%;
-  /*   margin: 20px;*/
 }
 
 p,
@@ -231,5 +218,4 @@ footer img {
     height: 100%;
     padding: 20px;
   }
-
 }
