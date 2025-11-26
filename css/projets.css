@@ -57,7 +57,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(224, 236, 238);
+  background-color: white;
   margin: 50px;
   border-radius: 40px;
   width: 900px;
