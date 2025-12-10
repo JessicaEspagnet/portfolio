@@ -1,8 +1,13 @@
+:root {
+    --blue: #0b3a66;
+}
+
 body {
-  background: linear-gradient(#aaeff1, rgb(199, 178, 223));
-  background-repeat: no-repeat;
+  background: linear-gradient(#aaeff1, rgb(199, 178, 223)) no-repeat;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header nav ul {
@@ -11,6 +16,7 @@ header nav ul {
   overflow: hidden;
   background-color: #0b3a66;
   margin: 0px;
+    box-sizing: border-box;
 }
 
 ul div {
@@ -51,6 +57,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-items: center;
+  flex: 1;
 }
 
 .projet {
@@ -100,40 +107,6 @@ h4 {
   padding: 40px;
 }
 
-/*.oc {
-  display: flex;
-  justify-content: space-between;
-}*/
-
-/*1*/
-/*
-.buttonPdf {
-  width: 80px;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #e5d3f0;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 2px 7px #dad4d4;
-}
-
-.buttonPdf:hover {
-  background-color: #bf75d6;
-}
-
-.buttonPdf:active {
-  background-color: #a481c2;
-  box-shadow: 2px 6px #dad4d4;
-  transform: translateY(4px);
-  transform: translateX(4px);
-}*/
-/*2*/
 .buttonPdf {
   border: none;
   outline: none;
@@ -150,12 +123,6 @@ h4 {
 }
 
 .buttonPdf:hover {
-  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-  /*border: 1px solid rgba(0,0,0,0.1);*/
   box-shadow: 0px 5px 0px 0px #b092c4;
   background-color: #f5def3;
   transform: translateY(2px);
@@ -175,7 +142,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 90px;
+  min-height: 90px;
   color: white;
 }
 
@@ -192,6 +159,58 @@ footer img {
 #logo_contact {
   display: flex;
   gap: 20px;
+}
+
+/* Menu filtre projets */
+
+.btn {<footer>
+        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 10px 0;
+    z-index: 1;
+    background: transparent;
+    backdrop-filter: blur(9px);
+}
+
+
+.btn button {
+    font-weight: 700;
+    border-radius: 30px;
+    background-size: 100% auto;
+    font-size: 1rem;
+    padding: 0.6em 1em;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+.btn button:hover {
+    background-position: right center;
+    color: white;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.btn button.active {
+    background-color: var(--blue);
+    color: white;
+}
+
+.card-projet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
 }
 
 @media screen and (max-width: 500px) {

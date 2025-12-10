@@ -26,7 +26,23 @@
         </nav>
     </header>
     <main>
-        <div class="projet">
+        <div class="card-projet">
+            <div class="btn">
+                <button class="active">Tous</button>
+                <button>Java</button>
+                <button>C#</button>
+                <button>Javascript</button>
+<!--                <button>SQL</button>-->
+                <button>devOps</button>
+                <button>Python</button>
+                <button>HTML/CSS</button>
+    <!--            <button>React</button>-->
+                <button>TailwindCSS</button>
+                <button>PHP</button>
+                <button>Symfony</button>
+            </div>
+        </div>
+        <div class="projet" data-skills="Java">
             <h2> Station météorologique </h2>
             <div class="contenu">
                 <div class="description">
@@ -52,13 +68,11 @@
                     <img src="img/Odomo.png" alt="Odomo station météo">
                 </div>
             </div>
-            <!--<a href="img/pdf/retexOdomo.pdf" target="_blank"><button class="buttonPdf"> Télécharger Pdf </button></a>-->
             <a href="img/pdf/retexOdomo.pdf" target="_blank" class="buttonPdf"> Télécharger Pdf </a>
             <p class="signature"> Jessica Espagnet </p>
-            <!-- <p class="signature"> <div class="nom">Jessica Espagnet </div> <div class="annee">2024 </div></p>-->
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="Java">
             <h2> Jeu de plateau </h2>
             <div class="contenu">
                 <div class="image">
@@ -88,7 +102,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="Java">
             <h2> IA d'un jeu de plateau </h2>
             <div class="contenu">
 
@@ -118,7 +132,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="devOps">
             <h2> Installation d'une machine virtuelle Linux </h2>
             <div class="contenu">
                 <div class="image">
@@ -150,7 +164,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="HTML/CSS">
             <h2> Création d'un site web </h2>
             <div class="contenu">
                 <div class="description">
@@ -182,7 +196,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="Javascript">
             <h2> Pixel War </h2>
             <div class="contenu">
                 <div class="image">
@@ -215,7 +229,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="C#">
             <h2> Editeur de graphes </h2>
             <div class="contenu">
                 <div class="description">
@@ -244,7 +258,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="Java">
             <h2> Visualisation de graphes </h2>
             <div class="contenu">
                 <div class="image">
@@ -274,7 +288,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="Java">
             <h2> Jeu de labyrinthe </h2>
             <div class="contenu">
                 <div class="description">
@@ -309,7 +323,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="Symfony,TailwindCSS,PHP">
             <h2> RobotChamp </h2>
             <div class="contenu">
                 <div class="image">
@@ -345,7 +359,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="devOps">
             <h2> Installation de services réseaux </h2>
             <div class="contenu">
                 <div class="description">
@@ -377,7 +391,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="Python">
             <h2> Mini RSA </h2>
             <div class="contenu">
                 <div class="image">
@@ -412,7 +426,7 @@
             <p class="signature"> Jessica Espagnet </p>
         </div>
 
-        <div class="projet">
+        <div class="projet" data-skills="devOps">
             <h2> Script gestion de prêts de documents </h2>
             <div class="contenu">
                 <div class="description">
@@ -463,6 +477,9 @@
             </a>
         </div>
     </footer>
+
+    <script type="module" src="projets.js"></script>
+
 </body>
 
 </html>
