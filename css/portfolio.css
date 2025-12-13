@@ -2,6 +2,7 @@ body {
     background: linear-gradient(#aaeff1, rgb(199, 178, 223));
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -71,6 +72,7 @@ h1 {
 }
 
 .texte {
+    min-width: 325px;
     width: 50%;
     font-size: 1.3rem;
     display: flex;
@@ -265,8 +267,9 @@ footer img {
         display: flex;
     }
 
-    .photo img {
-        width: 200px;
+    .photo-img {
+        min-width: 200px;
+        align-self: center;
     }
 
     footer {
