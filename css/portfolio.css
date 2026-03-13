@@ -160,13 +160,9 @@ h3 {
     align-items: center;
 }
 
-.colonne ul div {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
 .colonne {
+    display: flex;
+    flex-direction: column;
     columns: 2;
     column-gap: 200px;
     text-align: center;
@@ -174,6 +170,24 @@ h3 {
 
 .colonne ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 200px;
+}
+
+.colonne ul li {
+    background-color: #dfe8ff;
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin: 6px 0;
+    text-align: center;
+    break-inside: avoid;
+}
+
+.colonne ul li img {
+    width: 15%;
 }
 
 .troplong {
@@ -250,8 +264,8 @@ footer img {
         flex-wrap: wrap;
     }
 
-    .colonne {
-        columns: 1;
+    .colonne ul {
+        grid-template-columns: 1fr;
     }
 
     .langages,
