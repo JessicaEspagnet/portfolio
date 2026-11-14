@@ -57,6 +57,9 @@ header nav img {
     cursor: pointer;
 }
 
+main {
+    margin: 0 20px;
+}
 
 .presentation {
     display: flex;
@@ -93,13 +96,17 @@ h1 {
 .buttonCV {
     background-color: #dfe8ff;
     padding: 12px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-radius: 25px;
     border: none;
     width: 150px;
     box-shadow: -2px 5px 9px -4px rgba(0, 0, 0, 0.64);
     text-decoration: none;
     color: #0b3a66;
+}
+
+.buttonProjets {
+    margin: 20px;
 }
 
 .buttonProjets:hover,
@@ -109,6 +116,8 @@ h1 {
     font-weight: bold;
     cursor: pointer;
 }
+
+/* Competences */
 
 .aPropos {
     display: flex;
@@ -120,82 +129,79 @@ h1 {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
 }
 
 .introAPropos h2 {
     font-size: 1.9rem;
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 70px;
-    align-items: center;
-    margin: 20px 20px 50px;
-    flex-wrap: wrap;
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    justify-items: center;
+    margin: 0 auto 20px;
 }
 
-.buttons div {
+.skill-card {
     background-color: #dfe8ff;
     border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
+    padding: 25px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(11, 58, 102, 0.08);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.langages,
-.logiciels {
-    width: 700px;
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(11, 58, 102, 0.15);
 }
 
-h3 {
+.skill-card h3 {
+    color: #0b3a66;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
     text-align: center;
+    border-bottom: 2px solid rgba(11, 58, 102, 0.1);
+    padding-bottom: 10px;
 }
 
-.buttonProjets {
-    margin: 20px;
-}
-
-.langages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.colonne {
-    display: flex;
-    flex-direction: column;
-    columns: 2;
-    column-gap: 200px;
-    text-align: center;
-}
-
-.colonne ul {
+.skills-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.colonne ul li {
-    background-color: #dfe8ff;
-    border-radius: 20px;
-    padding: 8px 15px;
-    margin: 6px 0;
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    background: white;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.skills-list li:hover {
+    transform: translateX(6px);
+    background-color: #f7f9fc;
+}
+
+.skills-list i, .skills-list svg {
+    font-size: 1.6rem;
+    width: 30px;
     text-align: center;
-    break-inside: avoid;
 }
-
-.colonne ul li img {
-    width: 15%;
-}
-
-.troplong {
-    text-align: start;
-}
-
 footer {
     background-color: #52428b;
     display: flex;
@@ -266,16 +272,24 @@ footer img {
         flex-wrap: wrap;
     }
 
-    .colonne ul {
-        grid-template-columns: 1fr;
+    .presentation {
+        margin-bottom: 0;
     }
 
-    .langages,
-    .logiciels {
-        width: 200px;
-        align-items: center;
+    .aPropos {
+        padding: 0 10px;
     }
 
+    .skills-container {
+        grid-template-columns: 1fr !important;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .skill-card {
+        width: 100%;
+        padding: 20px 15px;
+    }
 
     .photo {
         width: 200px;
