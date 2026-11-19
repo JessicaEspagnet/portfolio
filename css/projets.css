@@ -1,237 +1,241 @@
 :root {
-    --blue: #0b3a66;
+	--blue: #0b3a66;
 }
 
 body {
-  background: linear-gradient(#aaeff1, rgb(199, 178, 223)) no-repeat;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+	background: linear-gradient(#aaeff1, rgb(199, 178, 223)) no-repeat;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 header nav ul {
-  list-style-type: none;
-  display: flex;
-  overflow: hidden;
-  background-color: #0b3a66;
-  margin: 0;
-    box-sizing: border-box;
+	list-style-type: none;
+	display: flex;
+	overflow: hidden;
+	background-color: #0b3a66;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 ul div {
-  display: flex;
+	display: flex;
 }
 
 header nav ul li {
-  padding: 10px;
-  float: right;
-  font-size: large;
+	padding: 10px;
+	float: right;
+	font-size: large;
 }
 
 header nav ul li a {
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 header nav ul li a:hover {
-  background-color: #111;
-  border-radius: 15px;
+	background-color: #111;
+	border-radius: 15px;
 }
 
 header nav img {
-  height: 80px;
-  margin: 2px;
+	height: 80px;
+	margin: 2px;
 }
 
 .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
 }
 
 .projet {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-    justify-content: center;
-  background-color: white;
-  margin: 50px;
-  border-radius: 40px;
-  width: 900px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	margin: 50px;
+	border-radius: 40px;
+	width: 900px;
 }
 
 .contenu {
-  display: flex;
-  justify-items: center;
-  justify-content: space-between;
-  padding: 30px;
-  gap: 10px;
+	display: flex;
+	justify-items: center;
+	justify-content: space-between;
+	padding: 30px;
+	gap: 10px;
 }
 
 .projet h2 {
-  text-align: center;
-  padding-top: 30px;
+	text-align: center;
+	padding-top: 30px;
 }
 
 .image {
-  justify-self: start;
+	justify-self: start;
 }
 
 .description {
-  width: 50%;
-  justify-content: center;
+	width: 50%;
+	justify-content: center;
 }
 
 .image img {
-  width: 100%;
+	width: 100%;
 }
 
 p,
 h4 {
-  margin: 20px;
+	margin: 20px;
 }
 
 .signature {
-  text-align: right;
-  margin: 10px;
-  padding: 40px;
+	text-align: right;
+	margin: 10px;
+	padding: 40px;
 }
 
 .buttonPdf {
-  border: none;
-  outline: none;
-  background-color: #e7d1e5;
-  padding: 10px 20px;
-  font-size: 12px;
-  font-weight: 700;
-  color: #363636;
-  border-radius: 10px;
-  transition: all ease 0.1s;
-  box-shadow: 0 5px 0 0 #b092c4;
-  cursor: pointer;
-  text-decoration: none;
+	border: none;
+	outline: none;
+	background-color: #e7d1e5;
+	padding: 10px 20px;
+	font-size: 12px;
+	font-weight: 700;
+	color: #363636;
+	border-radius: 10px;
+	transition: all ease 0.1s;
+	box-shadow: 0 5px 0 0 #b092c4;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .buttonPdf:hover {
-  box-shadow: 0 5px 0 0 #b092c4;
-  background-color: #f5def3;
-  transform: translateY(2px);
+	box-shadow: 0 5px 0 0 #b092c4;
+	background-color: #f5def3;
+	transform: translateY(2px);
 }
 
 .buttonPdf:active {
-  transform: translateY(0.7em);
-  box-shadow: 0 0 0 0 #a29bfe;
+	transform: translateY(0.7em);
+	box-shadow: 0 0 0 0 #a29bfe;
 }
 
 footer {
-  background-color: #6e45b1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 90px;
-  color: white;
+	background-color: #6e45b1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 90px;
+	color: white;
 }
 
 footer a {
-  color: white;
+	color: white;
 }
 
 footer img {
-  height: 80px;
-  margin: 2px;
-  padding: 10px;
+	height: 80px;
+	margin: 2px;
+	padding: 10px;
 }
 
 #logo_contact {
-  display: flex;
-  gap: 20px;
+	display: flex;
+	gap: 20px;
 }
 
 /* Menu filtre projets */
 
-.btn {<footer>
-        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
-
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: start;
-    gap: 20px;
-    padding: 10px 0;
-    z-index: 1;
-    background: transparent;
-    backdrop-filter: blur(9px);
+.btn {
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: start;
+	gap: 20px;
+	padding: 10px 0;
+	z-index: 1;
+	background: transparent;
+	backdrop-filter: blur(9px);
 }
 
 
 .btn button {
-    font-weight: 700;
-    border-radius: 30px;
-    background-size: 100% auto;
-    font-size: 1rem;
-    padding: 0.6em 1em;
-    width: 150px;
-    text-align: center;
-    text-decoration: none;
-    background-color: transparent;
-    color: var(--blue);
-    border: 2px solid var(--blue);
+	font-weight: 700;
+	border-radius: 30px;
+	background-size: 100% auto;
+	font-size: 1rem;
+	padding: 0.6em 1em;
+	width: 150px;
+	text-align: center;
+	text-decoration: none;
+	background-color: transparent;
+	color: var(--blue);
+	border: 2px solid var(--blue);
 }
 
 .btn button:hover {
-    background-position: right center;
-    color: white;
-    background-color: var(--blue);
-    cursor: pointer;
+	background-position: right center;
+	color: white;
+	background-color: var(--blue);
+	cursor: pointer;
 }
 
 .btn button.active {
-    background-color: var(--blue);
-    color: white;
+	background-color: var(--blue);
+	color: white;
 }
 
 .card-projet {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 50px;
 }
 
 @media screen and (max-width: 500px) {
 
-  .contenu {
-    display: flex;
-    flex-wrap: wrap;
-  }
+	.contenu {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-  .menu {
-    display: flex;
-  }
+	.cahier-des-charges {
+		display: flex;
+		flex-wrap: wrap;
+		width: 50%;
+	}
 
-  .menu div {
-    display: flex;
-  }
+	.menu {
+		display: flex;
+	}
 
-  .menu div li:first-child {
-    display: none;
-  }
+	.menu div {
+		display: flex;
+	}
 
-  footer {
-    flex-wrap: wrap;
-    height: 100%;
-    padding: 20px;
-  }
+	.menu div li:first-child {
+		display: none;
+	}
+
+	footer {
+		flex-wrap: wrap;
+		height: 100%;
+		padding: 20px;
+	}
 }
